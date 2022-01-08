@@ -14,3 +14,12 @@ set noswapfile
 set incsearch
 set scrolloff=5
 set hidden
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
