@@ -14,6 +14,9 @@ set noswapfile
 set incsearch
 set scrolloff=5
 set hidden
+set nobackup
+set undodir=~/.vim/myundodir
+set undofile
 
 call plug#begin('~/.vim/plugged')
 
@@ -23,3 +26,6 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
+
+" For kitty (Background color)
+let &t_ut=''
