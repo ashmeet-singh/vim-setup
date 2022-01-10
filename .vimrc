@@ -1,6 +1,4 @@
 set nocompatible
-filetype plugin indent on
-syntax on
 set noerrorbells
 set tabstop=4
 set softtabstop=4
