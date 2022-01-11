@@ -20,6 +20,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 
+Plug 'mattn/emmet-vim'
+
 call plug#end()
 
 colorscheme gruvbox
@@ -27,3 +29,5 @@ set background=dark
 
 " For kitty (Background color)
 let &t_ut=''
+
+let g:user_emmet_leader_key='<C-Z>'
