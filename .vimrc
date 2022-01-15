@@ -16,6 +16,8 @@ set nobackup
 set undodir=~/.vim/myundodir
 set undofile
 
+let &t_TI = ''
+let &t_TE = ''
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
