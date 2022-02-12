@@ -16,10 +16,7 @@ set nobackup
 set undodir=~/.vim/myundodir
 set undofile
 
-let &t_TI = ''
-let &t_TE = ''
-
-" For kitty (Background color)
+" Vim background color in Kitty
 let &t_ut=''
 
 call plug#begin('~/.vim/plugged')
