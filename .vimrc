@@ -16,6 +16,10 @@ set nobackup
 set undodir=~/.vim/myundodir
 set undofile
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 " Vim background color in Kitty
 let &t_ut=''
 
@@ -27,6 +31,7 @@ Plug 'mattn/emmet-vim'
 
 call plug#end()
 
+syntax on
 colorscheme gruvbox
 set background=dark
 
