@@ -1,5 +1,5 @@
 set nocompatible
-set noerrorbells
+filetype plugin indent on
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -15,21 +15,31 @@ set hidden
 set nobackup
 set undodir=~/.vim/myundodir
 set undofile
+syntax on
+set omnifunc=syntaxcomplete#Complete
 
 " Vim background color in Kitty
 let &t_ut=''
 
-if (has("termguicolors"))
+" modifyOtherKeys
+let &t_TI = ''
+let &t_TE = ''
+
+if (has('termguicolors'))
   set termguicolors
 endif
-
-syntax on
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 
 Plug 'mattn/emmet-vim'
+
+Plug 'junegunn/fzf'
+
+Plug 'junegunn/fzf.vim'
+
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 call plug#end()
 
