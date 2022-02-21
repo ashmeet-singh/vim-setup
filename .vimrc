@@ -35,7 +35,7 @@ Plug 'morhetz/gruvbox'
 
 Plug 'mattn/emmet-vim'
 
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 Plug 'junegunn/fzf.vim'
 
