@@ -43,8 +43,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 
 call plug#end()
 
-let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
 set background=dark
 
 let g:user_emmet_leader_key='<C-Z>'
