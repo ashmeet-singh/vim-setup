@@ -29,7 +29,7 @@ if (has('termguicolors'))
   set termguicolors
 endif
 
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 
 Plug 'morhetz/gruvbox'
 
